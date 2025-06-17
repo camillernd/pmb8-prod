@@ -1,0 +1,22 @@
+<!-- $Id: contribution_areas.tpl.html,v 1.8 2021/04/20 13:35:25 gneveu Exp $ -->
+
+{% if areas | length %}
+
+<div class='contribution_area_table'>
+	<div class='contribution_area_table_row'>
+		{% for area in areas %}
+			<a class='contribution_area_table_cell' 
+				style='border-color: {{ area.color }}; background-position: center; background-size: cover; background-repeat: no-repeat; background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url({{ area.area_logo }});' 
+				href='./index.php?lvl=contribution_area&sub=area&id={{ area.id }}'>
+				<p class='contribution_area_table_title'>{{ area.title }}</p>
+				<p class='contribution_area_table_comment'>{{ area.comment }}</p>
+			</a>
+			{% if !loop.last %}
+				{% cycle "", "", "</div><div class='contribution_area_table_row'>" %}
+			{% endif %}
+		{% endfor %}
+	</div>
+</div>
+{% else %}
+	{{ msg.empr_contribution_area_no_area }}
+{% endif %}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE XMLlist SYSTEM "../XMLlist.dtd" [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<!-- messages localisés en français
+****************************************************************************************
+© 2002-2012 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: frbr_entity_series_view_serieslist.xml,v 1.2 2021/03/01 11:04:07 tsamson Exp $ -->
+
+<XMLlist>
+	<entry code="frbr_entity_series_view_title">Titre de la liste</entry>
+	<entry code="frbr_entity_series_view_series_desc">Titres de série</entry>
+	<entry code="frbr_entity_series_view_serieslist_title">Liste des titres de série</entry>
+	<entry code="frbr_entity_series_view_grouped_series">Groupement de séries</entry>
+	<entry code="frbr_entity_series_view_grouped_series_label">Libellé du regroupement</entry>
+	<entry code="frbr_entity_series_view_grouped_series_values">Liste de séries par regroupement</entry>
+</XMLlist>

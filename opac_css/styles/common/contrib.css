@@ -1,0 +1,128 @@
+/* +--------------------------------------------------------------------------+
+// ? 2002-2013 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+// +-------------------------------------------------+
+// $Id: contrib.css,v 1.10 2023/01/09 15:03:38 gneveu Exp $ */
+#empr_contribution_area {
+	background: #f7f9f9;
+	margin: 0;
+	border: solid 1px #ddd;
+}
+
+.contribution_area_table_cell {
+	border : 5px solid white;
+	border-radius: 5px;
+	background: #e8e8e8;
+	box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25) inset;
+	border-width: 2px !important;
+}
+
+.tundra .contributionDivContainer .dijitTabContainerTop-tabs .dijitTabChecked,
+.tundra .contributionDivContainer .dijitTabContainerTop-dijitContentPane,
+.tundra .contributionDivContainer .dijitTabContainerLeft-dijitContentPane,
+.tundra .contributionDivContainer .dijitTabContainerBottom-dijitContentPane,
+.tundra .contributionDivContainer .dijitTabContainerRight-dijitContentPane,
+.tundra .contributionDivContainer .dijitAccordionContainer-dijitContentPane {
+	background: #f7f9f9;
+}
+
+.contributionDivContainer label {
+	display: inline-block;
+	margin-bottom: 5px;
+	text-decoration: none;
+	font-weight: 500;
+	font-style: normal;
+	padding: 10px 0px 5px 0px;
+	vertical-align: baseline;
+}
+
+.container-div.row+.container-div.row>div>div:last-child {}
+
+.container-div.row textarea,
+.container-div.row div[id^="record_record_temp"] {}
+
+.contributionDivContainer .container-div.row div[id^="record_record_temp"] .saisie-80em.dijitTextBox,
+.contributionDivContainer .dijitStretch.dijitButtonContents .dijitButtonText {
+	padding-left: 5px;
+}
+
+.contributionDivContainer .dijitArrowButton.dijitDownArrowButton.dijitArrowButtonContainer {
+	width: 22px;
+}
+
+#pmbopac.tundra .contributionDivContainer .dijitMenu {
+	border: solid 1px #111;
+}
+
+.dijitStretch.dijitButtonContents {}
+
+#pmbopac .contributionDivContainer .dijitButtonNode {
+	border: solid 1px #ccc !important;
+	height: 30px;
+}
+
+.contributionDivContainer .bouton_small.dijitButton {
+	padding: 0;
+}
+
+.contributionDivContainer input[type="file"] {
+	background: white;
+	display: block;
+	padding: 5px;
+	border: solid 1px #ccc;
+}
+
+.contributionDivContainer .left>input+input {
+	margin-left: 10px;
+}
+
+.contributionDivContainer .cancel_part {
+	margin-right: 10px;
+}
+
+.contributionDivContainer .form_row_content_resource_selector,
+.contributionDivContainer .form_row_content_small_text {
+	width: 75%;
+}
+
+.contributionDivContainer .contribution_comment {
+	margin-left: 10px;
+}
+
+.contributionRight {
+	text-align: right;
+}
+
+.contribution_drop_down_menu,
+.contribution_drop_down_menu_item {
+    background-color: #FFF !important;
+    color: black !important;
+}
+
+.contributon_datalist {
+	border: 1px solid rgb(0, 0, 0);
+	position: absolute;
+	background-color: rgb(255, 255, 255);
+	z-index: 1000;
+	overflow: hidden;
+}
+
+.contributon_datalist_option_surbrillance {
+	background: rgb(0, 0, 136) none repeat scroll 0% 0%;
+	color: rgb(255, 255, 255);
+}
+
+.contributon_datalist_option {
+	padding-left: 2px;
+}
+
+.field_container_loader {
+	position: relative;
+	display: flex;
+	align-items: center;
+	width : 100%;
+}
+
+.field_container_loader .loading_img {
+	position: absolute;
+	right: 10px;
+}

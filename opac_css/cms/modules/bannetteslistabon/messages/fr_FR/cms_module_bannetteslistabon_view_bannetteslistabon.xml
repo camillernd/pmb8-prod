@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!DOCTYPE XMLlist SYSTEM "../../../../../includes/XMLlist.dtd" [<!ENTITY nbsp "&amp;nbsp;">]>
+
+<!-- messages localisés en français pour le module Article
+****************************************************************************************
+© 2002-2012 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: cms_module_bannetteslistabon_view_bannetteslistabon.xml,v 1.4 2024/03/06 14:19:43 jparis Exp $ -->
+
+<XMLlist>
+	<entry code="cms_module_common_view_bannetteslistabon_build_bannette_link">Construction du lien vers une bannette</entry>
+	<entry code="cms_module_common_view_bannetteslistabon_build_record_link">Construction du lien vers une notice</entry>
+	<entry code='cms_module_common_view_django_template_record_content'>Template de notice à utiliser pour le contenu</entry>
+	<entry code="cms_module_common_view_bannetteslistabon_build_bannette_nb_notices">Nombre de notices à afficher par bannette</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannetteslistabon_css">CSS associée</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannettes_desc">Liste des bannettes</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannettes_id_desc">ID de la bannette</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannettes_name_desc">Titre</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannettes_comment_desc">Commentaire public</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannettes_record_number_desc">Nombre de notices</entry>
+	<entry code="cms_module_bannetteslistabon_view_bannettes_link_desc">Lien vers la bannette</entry>
+	<entry code="cms_module_bannetteslistabon_view_records_desc">Liste des notices</entry>
+	<entry code="cms_module_bannetteslistabon_view_record_id_desc">ID de la notice</entry>
+	<entry code="cms_module_bannetteslistabon_view_record_title_desc">Titre de la notice</entry>
+	<entry code="cms_module_bannetteslistabon_view_record_link_desc">Lien Opac de la notice</entry>
+	<entry code="cms_module_bannetteslistabon_view_record_url_vign_desc">Url de la vignette</entry>
+	<entry code="cms_module_bannetteslistabon_view_notices_record_content_desc">Contenu de la notice</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_desc">Liste des flux RSS</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_id_desc">ID du flux RSS</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_name_desc">Nom</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_opac_link_desc">Lien Opac</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_link_desc">Lien du Flux RSS</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_lang_desc">Langue</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_copy_desc">Copyright</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_editor_mail_desc">Email de l'éditeur</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_webmaster_mail_desc">Email du Webmasteur</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_ttl_desc">Time to live</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_img_url_desc">URL de l'image</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_img_title_desc">Titre de l'image</entry>	
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_img_link_desc">Lien de l'image</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_format_desc">Format du flux</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_content_desc">Contenu du flux</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_date_last_desc">Date</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_export_court_desc">Export court</entry>
+	<entry code="cms_module_bannetteslistabon_view_flux_rss_template_desc">Template</entry>
+	<entry code="cms_module_bannetteslistabon_view_manage_abo">Gérer ses abonnements</entry>
+	<entry code="cms_module_bannetteslistabon_view_receive_by_mail">Recevoir par mail les alertes</entry>
+	<entry code="cms_module_bannetteslistabon_view_rss_abo">S'abonner au flux RSS</entry>
+	<entry code="cms_module_bannetteslistabon_view_see_all_item">Voir toutes les notices...</entry>
+	<entry code="cms_module_bannetteslistabon_view_item_abo">S'abonner aux alertes cochées</entry>
+	<entry code="cms_module_bannetteslistabon_view_radio_subscribe">S'inscrire</entry>
+	<entry code="cms_module_bannetteslistabon_view_radio_connect">Se connecter</entry>
+	<entry code="cms_module_bannetteslistabon_view_connect_login">Identifiant :</entry>
+	<entry code="cms_module_bannetteslistabon_view_connect_pwd">Mot de passe :</entry>
+	<entry code="cms_module_bannetteslistabon_view_connect_forgotten_pwd">Mot de passe oublié ?</entry>
+	<entry code="cms_module_bannetteslistabon_view_connect_btn">Se connecter et s'abonner aux alertes cochées</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_name">Nom :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_first_name">Prénom :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_mail">Email :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_login">Identifiant :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_pwd">Mot de passe :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_pwd_verif">Mot de passe (vérification) :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_captcha">Code de vérification :</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_btn">S'inscrire et s'abonner aux alertes cochées</entry>
+	
+	<entry code="cms_module_bannetteslistabon_view_email_sent">Un email de confirmation vient de vous être envoyé, merci de consulter votre messagerie.</entry>
+	<entry code="cms_module_bannetteslistabon_view_subscribe_consent_message">J'accepte la conservation et l'utilisation à but non commercial de mes données personnelles</entry>
+	
+    <entry code="cms_module_bannetteslistabon_view_no_selection_error" >Vous devez sélectionner au moins un abonnement.</entry>
+	<entry code="cms_module_bannetteslistabon_view_no_login_pwd_error" >Vous devez renseigner un identifiant et un mot de passe.</entry>
+	<entry code="cms_module_bannetteslistabon_view_connect_error" >Identifiant ou mot de passe incorrect.</entry>
+	<entry code="cms_module_bannetteslistabon_view_form_error">Votre saisie est incomplète ou erronée.</entry>
+	
+	<entry code="cms_module_bannetteslistabon_view_error_bad_password">Votre mot de passe n'est pas assez sécurisé.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_consent_message">Vous devez accepter la conservation de vos données.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_tags_not_allowed">Les champs de saisie ne doivent pas contenir de tags HTML.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_mail_used">Cet email est déjà utilisé.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_login_used">Ce login est déjà utilisé.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_login_invalid">Ce login n'est pas valide.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_mail_not_sent">Votre inscription est prise en compte mais le mail de validation d'inscription n'a pu être envoyé.\nContactez l'administrateur.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_unknown">Une erreur technique est survenue.\nContactez l'administrateur.</entry>
+	<entry code="cms_module_bannetteslistabon_view_error_code">le code de vérification n'est plus valide.</entry>
+	<entry code="cms_module_bannetteslistabon_view_categories_desc">Liste des classements</entry>
+</XMLlist>

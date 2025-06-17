@@ -1,0 +1,11 @@
+<!-- $Id: scan_requests_list.tpl.html,v 1.8 2023/08/02 09:39:19 dgoron Exp $ -->
+{% for scan_request in scan_requests.scan_requests %}
+	{% if loop.first %}
+		<table class='scan_requests_list'>
+			{{ scan_requests.display_header_list | safe }}
+	{% endif %}
+	{{ scan_request.display_in_list | safe }}
+	{% if loop.last %}
+		</table>
+	{% endif %}
+{% endfor %}

@@ -1,0 +1,104 @@
+<!-- $Id: gabarit.html,v 1.15 2023/08/24 10:35:24 rtigero Exp $ -->
+
+<div id="aut_details">
+	{% block title %}
+		{{ authority.isbd | page_title }}
+	{% endblock %}
+	<div id="aut_details_container">
+		<div id="aut_see" class="aut_see">
+			<table class="table_aut_see" role='presentation'>
+				<tr id="authority_container">
+					<td>
+						<div id="authority_display_table" class="aut_display_table">
+							{% block aut_see %}
+								{% if authority.thumbnail_url %}
+									<div class="vignetteAuthorite">
+										{{ authority.thumbnail }}
+									</div>
+								{% endif %}
+								{% block header %}
+								{% endblock %}
+								{% block details %}
+									<p>Détails de notre autorité</p>
+								{% endblock %}
+								{% block aut_linked %}
+									{% if aut_link.display %}
+										<div class="aut_linked aut_display_row">
+											<div class="aut_display_cell">
+												<b>{{ msg.aut_link }} :</b>
+											</div>
+											<div class="aut_display_cell">
+												{{ aut_link.display }}
+											</div>
+										</div>
+									{% endif %}
+								{% endblock %}
+								{% block indexing_concepts %}
+									{% for indexing_concept in authority.indexing_concepts %}
+										{% if loop.first %}
+											<div class="aut_display_row">
+												<div class="aut_display_cell">
+													<b>{{ msg.ontology_skos_concept }} :</b>
+												</div>
+												<div class="aut_display_cell">
+										{% else %}
+											<br />
+										{% endif %}
+										<a href="{{ indexing_concept.permalink }}">{{ indexing_concept.isbd }}</a>
+										{% if loop.last %}
+												</div>
+											</div>
+										{% endif %}
+									{% endfor %}
+								{% endblock %}	
+								{% block concept_composed %}
+									<div class="aut_display_row concepts_composed">	
+										{{authority.concepts_composed }}
+									</div>
+								{% endblock %}
+								{% block pperso %}
+									{% for pperso in authority.p_perso %}
+										{% if pperso.AFF %}
+											<div class="aut_display_row">
+												<div class="aut_display_cell">
+													{{ pperso.TITRE }}
+												</div>
+												<div class="aut_display_cell">
+													{{ pperso.AFF }}
+												</div>
+											</div>
+										{% endif %}
+									{% endfor %}
+								{% endblock %}							
+								{% block map %}
+								{% endblock %}
+								{% block authority_edit %}
+									<!-- Bouton edition -->
+									{% if authority.edit_link %}
+										<div class="statutPartN">
+											<span class="imgStatutPartN">
+												<img class="imgStatutPartN" src="{{ img.new_w.png }}" style="border:0px" alt="{{ msg.edit_autority}}"/>
+											</span>
+											<span class="StatutPartN">
+												<a href="{{ authority.edit_link }}" title="{{ msg.edit_autority}}">
+													<span class="bt_authority_edit">{{ msg.edit_autority }}</span>
+												</a>
+											</span>										
+							            </div>   
+									{% endif %}				
+								{% endblock %}
+								{% block enrichment %}
+								{% endblock %}
+							{% endblock %}
+						</div>
+					</td>
+				</tr>
+			</table>	
+		</div>
+		{% block records %}
+			<div id='aut_details_liste'>
+				{{ authority.recordslist }}
+			</div>	
+		{% endblock %}	
+	</div>
+</div>

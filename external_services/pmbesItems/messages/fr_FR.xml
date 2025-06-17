@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- messages localisés en français pour la classe de fonctions search_functions
+****************************************************************************************
+© 2002-2007 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: fr_FR.xml,v 1.4 2021/03/11 13:34:41 dbellamy Exp $ -->
+
+<!DOCTYPE XMLlist SYSTEM "../../../includes/XMLlist.dtd" >
+<XMLlist>
+
+    <!-- pmbesItems -->
+	<entry code="pmbesItems_description">Fonctions relatives aux exemplaires</entry>
+	
+	<!-- fetch_notice_items -->
+	<entry code="fetch_notice_items_description">Renvoie les exemplaires associés à une notice</entry>
+	<entry code="fetch_notice_items_input_description"></entry>
+	<entry code="fetch_notice_items_output_description"></entry>
+	<entry code="fetch_notice_items_noticeid">Identifiant notice</entry>
+	<entry code="fetch_notice_items_OPACUserId">Identifiant emprunteur, pour vérification des droits d'accès.
+	-1: Ne pas tenir compte
+	0: emprunteur anonyme
+	x: identifiant emprunteur
+	</entry>
+	<entry code="fetch_notice_items_items">Tableau d'exemplaires</entry>
+	
+	<!-- fetch_item -->
+	<entry code="fetch_item_description">Renvoie un exemplaire à partir de l'un de ses identifiants</entry>
+	<entry code="fetch_item_input_description">Au choix: identifiant ou code-barres</entry>
+	<entry code="fetch_item_output_description"></entry>
+	<entry code="fetch_item_item_cb">Code-barres</entry>
+	<entry code="fetch_item_item_id">Identifiant</entry>
+	<entry code="fetch_item_OPACUserId">Identifiant emprunteur, pour vérification des droits d'accès.
+    -1: Ne pas tenir compte
+	0: emprunteur anonyme
+	x: identifiant emprunteur
+	</entry>
+	<entry code="fetch_item_item">Exemplaire</entry>
+
+    <!-- fetch_notices_items -->
+	<entry code="fetch_notices_items_description">Renvoie les exemplaires associés à une liste de notices</entry>
+	<entry code="fetch_notices_items_input_description"></entry>
+	<entry code="fetch_notices_items_output_description"></entry>
+	<entry code="fetch_notices_items_noticesid">Tableau d'identifiants de notices</entry>
+	<entry code="fetch_notices_items_noticesid_anoticeid"></entry>
+	<entry code="fetch_notices_items_OPACUserId">Identifiant emprunteur, pour vérification des droits d'accès.
+	-1: Ne pas tenir compte
+	0: emprunteur anonyme
+	x: identifiant emprunteur
+	</entry>
+	<entry code="fetch_notices_items_result"></entry>
+	<entry code="fetch_notices_items_result_noticeid">Identifiant notice</entry>
+	<entry code="fetch_notices_items_result_items">Tableau d'exemplaires</entry>
+	
+    <!-- fetch_bulletins_items -->
+	<entry code="fetch_bulletins_items_description">Renvoie les exemplaires associés à une liste de bulletins</entry>
+	<entry code="fetch_bulletins_items_input_description"></entry>
+	<entry code="fetch_bulletins_items_output_description"></entry>
+	<entry code="fetch_bulletins_items_bulletinids">Tableau d'identifiants de bulletins</entry>
+	<entry code="fetch_bulletins_items_OPACUserId">Identifiant emprunteur, pour vérification des droits d'accès.
+	-1: Ne pas tenir compte
+	0: emprunteur anonyme
+	x: identifiant emprunteur
+	</entry>
+	<entry code="fetch_bulletins_items_result"></entry>
+	<entry code="fetch_bulletins_items_result_bulletinid">Identifiant bulletin</entry>
+	<entry code="fetch_bulletins_items_result_items">Tableau d'exemplaires</entry>
+
+</XMLlist>

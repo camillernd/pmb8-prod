@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!-- messages localisés en français pour la classe de fonctions pmbesMySQL
+****************************************************************************************
+© 2002-2007 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: en_UK.xml,v 1.7.2.1 2024/09/18 09:38:37 dgoron Exp $ -->
+
+<!DOCTYPE XMLlist SYSTEM "../../../includes/XMLlist.dtd" >
+<XMLlist>
+<!--
+pmbesClean
+-->
+  <entry code="Clean_functions_description">Functions relating on cleaning functions PMB</entry>   
+<!--
+indexGlobal
+-->
+  <entry code="indexGlobal_description">Reindex the global index</entry>
+  <entry code="indexGlobal_step_name">Nom de l'étape (main - custom_field - authperso - authperso_link - callables)</entry>
+  <entry code="indexGlobal_fields">Liste des codes champs</entry>
+  <entry code="indexGlobal_output_description"></entry>
+  <entry code="indexGlobal_result">Result of the base reindexing</entry> 
+<!--
+indexSphinxRecords
+-->
+  <entry code="indexSphinxRecords_description">Réindexer les notices dans Sphinx</entry>
+  <entry code="indexSphinxRecords_output_description"></entry>
+  <entry code="indexSphinxRecords_result">Résultat de la réindexation des notices dans Sphinx</entry> 
+<!--
+indexNotices
+-->
+  <entry code="indexNotices_description">Reindex all the search fields</entry>
+  <entry code="indexNotices_output_description"></entry>
+  <entry code="indexNotices_result">Result of the reindexing of all the search fields</entry> 
+<!--
+cleanAuthors
+-->
+  <entry code="cleanAuthors_description">Delete unused authors</entry>
+  <entry code="cleanAuthors_output_description"></entry>
+  <entry code="cleanAuthors_result">Result of the deletion of unused authors</entry>
+<!--
+cleanPublishers
+-->
+  <entry code="cleanPublishers_description"> Delete unused publishers</entry>
+  <entry code="cleanPublishers_output_description"></entry>
+  <entry code="cleanPublishers_result">Result of the deletion of unused publishers</entry>
+<!--
+cleanCollections
+-->
+  <entry code="cleanCollections_description">Delete unused collections</entry>
+  <entry code="cleanCollections_output_description"></entry>
+  <entry code="cleanCollections_result">Result of the deletion of unused collections</entry>
+<!--
+cleanSubCollections
+-->
+  <entry code="cleanSubcollections_description">Delete unused sub-collections</entry>
+  <entry code="cleanSubcollections_output_description"></entry>
+  <entry code="cleanSubcollections_result">Result of the deletion of unused sub-collections</entry>
+<!--
+cleanCategories
+-->
+  <entry code="cleanCategories_description">Delete the unused categories</entry>
+  <entry code="cleanCategories_output_description"></entry>
+  <entry code="cleanCategories_result">Result of the deletion of unused categories</entry>
+<!--
+cleanSeries
+-->
+  <entry code="cleanSeries_description">Delete the unused serie titles</entry>
+  <entry code="cleanSeries_output_description"></entry>
+  <entry code="cleanSeries_result">Result of the deletion of unused serie titles</entry>
+<!--
+cleanTitresUniformes
+-->
+  <entry code="cleanTitresUniformes_description">Delete the unused uniform titles</entry>
+  <entry code="cleanTitresUniformes_output_description"></entry>
+  <entry code="cleanTitresUniformes_result">Result of the deletion of unused uniform titles</entry>
+<!--
+cleanIndexint
+-->
+  <entry code="cleanIndexint_description">Delete the unused decimal indexations</entry>
+  <entry code="cleanIndexint_output_description"></entry>
+  <entry code="cleanIndexint_result">Result of the deletion of unused decimal indexations</entry>
+<!--
+cleanRelations
+-->
+  <entry code="cleanRelations_description">Clean the relations with baskets, SDI baskets, and categories</entry>
+  <entry code="cleanRelations_output_description"></entry>
+  <entry code="cleanRelations_result">Result of the relations cleaning</entry>
+<!--
+cleanNotices
+-->
+  <entry code="cleanNotices_description">Delete the records with no copy</entry>
+  <entry code="cleanNotices_output_description"></entry>
+  <entry code="cleanNotices_result">Result of the deletion of the records with no copy</entry>
+<!--
+indexAcquisitions
+-->
+  <entry code="indexAcquisitions_description">Reindexing of the acquisitions</entry>
+  <entry code="indexAcquisitions_output_description"></entry>
+  <entry code="indexAcquisitions_result">Result of the reindexing of the acquisitions</entry>
+<!--
+genSignatureNotice
+-->
+  <entry code="genSignatureNotice_description">Generate all type of records signature</entry>
+  <entry code="genSignatureNotice_output_description"></entry>
+  <entry code="genSignatureNotice_result">Result of the generation of records signature ?</entry>
+  <!--
+genSignatureDocnum
+-->
+  <entry code="genSignatureDocnum_description">Générer toutes les signatures de documents numériques</entry>
+  <entry code="genSignatureDocnum_output_description"></entry>
+  <entry code="genSignatureDocnum_result">Résultat de la génération des signatures de documents numériques</entry>
+<!--
+genPhonetique
+-->
+  <entry code="genPhonetique_description">Generate the index for the search by "stemming" in the OPAC</entry>
+  <entry code="genPhonetique_output_description"></entry>
+  <entry code="genPhonetique_result">Result of the generation of the index for the search by "stemming" in the OPAC</entry>
+<!--
+genAutLink
+-->
+  <entry code="genAutLink_description">Générer les liens entre autorités</entry>
+  <entry code="genAutLink_output_description"></entry>
+  <entry code="genAutLink_result">Résultat de la génération des liens entre autorités</entry>
+<!--
+nettoyageCleanTags
+-->
+  <entry code="nettoyageCleanTags_description">Clean the keywords of records</entry>
+  <entry code="nettoyageCleanTags_output_description"></entry>
+  <entry code="nettoyageCleanTags_result">Result of the cleaning of keywords of the records</entry>
+<!--
+cleanCategoriesPath
+-->
+  <entry code="cleanCategoriesPath_description">Generate the links between the categories needed for the autoposting</entry>
+  <entry code="cleanCategoriesPath_output_description"></entry>
+  <entry code="cleanCategoriesPath_result">Result of the generation of links between the categories needed for the autoposting</entry>
+<!--
+genDatePublicationArticle
+-->
+  <entry code="genDatePublicationArticle_description">Generate the year of publication of periodicals' articles</entry>
+  <entry code="genDatePublicationArticle_output_description"></entry>
+  <entry code="genDatePublicationArticle_result">Result of the generation of the year of publication of periodicals' articles</entry>
+<!--
+genDateTri
+-->
+  <entry code="genDateTri_description">Generate the release date of the records</entry>
+  <entry code="genDateTri_output_description"></entry>
+  <entry code="genDateTri_result">Result of the generation of the release date of the records</entry>
+<!--
+indexDocnum
+-->
+  <entry code="indexDocnum_description">Reindex the digital documents</entry>
+  <entry code="indexDocnum_output_description"></entry>
+  <entry code="indexDocnum_result">Result of the reindexing of digital documents</entry>
+<!--
+rdfStore
+-->
+  <entry code="cleanRdfStore_description">Reindex the RDF store</entry>
+  <entry code="cleanRdfStore_output_description"></entry>
+  <entry code="cleanRdfStore_result">Result of the reindexing of the RDF store</entry>   
+<!--
+synchroRdfStore
+-->
+  <entry code="cleanSynchroRdfStore_description">Reindex the RDF synchronization</entry>
+  <entry code="cleanSynchroRdfStore_output_description"></entry>
+  <entry code="cleanSynchroRdfStore_result">Result of the reindexing of the RDF synchronization</entry>
+<!--
+FAQ
+-->
+  <entry code="cleanFAQ_description">Reindex the FAQ</entry>
+  <entry code="cleanFAQ_output_description"></entry>
+  <entry code="cleanFAQ_result">Result of the reindexing of the FAQ</entry>
+  <!--
+CMS
+-->
+  <entry code="cleanCMS_description">Reindex the editorial content</entry>
+  <entry code="cleanCMS_output_description"></entry>
+  <entry code="cleanCMS_result">Result of the reindexing of the editorial content</entry>
+  <!--
+concept
+-->
+  <entry code="cleanConcept_description">Reindex the concepts</entry>
+  <entry code="cleanConcept_output_description"></entry>
+  <entry code="cleanConcept_result">Result of the reindexing of the concepts</entry>
+  <!--
+indexSphinxConcepts
+-->
+  <entry code="indexSphinxConcepts_description">Réindexer les concepts dans Sphinx</entry>
+  <entry code="indexSphinxConcepts_output_description"></entry>
+  <entry code="indexSphinxConcepts_result">Résultat de la réindexation des concepts dans Sphinx</entry>
+    <!--
+hashEmprPassword
+-->
+  <entry code="hashEmprPassword_description">Encoder les mots de passe lecteurs pour la connexion à l'Opac</entry>
+  <entry code="hashEmprPassword_output_description"></entry>
+  <entry code="hashEmprPassword_result">Résultat du réencodage des mots de passe</entry>
+<!--
+indexAuthorities
+-->
+  <entry code="indexAuthorities_description">Réindexer toutes les autorités</entry>
+  <entry code="indexAuthorities_input_description"></entry>
+  <entry code="indexAuthorities_filters">Indexer seulement certains types d'autorités</entry>
+  <entry code="indexAuthorities_step_name">Nom de l'étape (main - custom_field - authperso - authperso_link - callables)</entry>
+  <entry code="indexAuthorities_fields">Liste des codes champs</entry>
+  <entry code="indexAuthorities_output_description"></entry>
+  <entry code="indexAuthorities_result">Résultat de la réindexation des autorités</entry>   
+  <!--
+indexSphinxAuthorities
+-->
+  <entry code="indexSphinxAuthorities_description">Réindexer toutes les autorités dans Sphinx</entry>
+  <entry code="indexSphinxAuthorities_input_description"></entry>
+  <entry code="indexSphinxAuthorities_filters">Indexer seulement certains types d'autorités</entry>
+  <entry code="indexSphinxAuthorities_output_description"></entry>
+  <entry code="indexSphinxAuthorities_result">Résultat de la réindexation des autorités dans Sphinx</entry>   
+<!--
+genArk
+-->
+  <entry code="genArk_description">Générer les ARK</entry>
+  <entry code="genArk_output_description"></entry>
+  <entry code="genArk_result">Résultat de la génération des ARK</entry>   
+<!--
+genDocnumThumbnail
+-->
+  <entry code="genDocnumThumbnail_description">Générer les vignettes de document numérique</entry>
+  <entry code="genDocnumThumbnail_output_description"></entry>
+  <entry code="genDocnumThumbnail_result">Résultat de la génération des vignettes de document numérique</entry>   
+</XMLlist>

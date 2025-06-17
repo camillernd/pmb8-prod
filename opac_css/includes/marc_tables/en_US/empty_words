@@ -1,0 +1,8 @@
+<?php
+// $Id: empty_words,v 1.2.38.1 2025/01/16 10:24:13 qvarin Exp $
+
+// tableau contenant les mots vides
+
+$empty_word[0] = 'the';
+
+?>

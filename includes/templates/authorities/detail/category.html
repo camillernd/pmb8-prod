@@ -1,0 +1,67 @@
+{% extends 'gabarit.html' %}
+
+<!-- $Id: category.html,v 1.3 2020/10/23 13:15:28 dgoron Exp $ -->
+
+{% block detail %}
+	{% if element.has_parent %}
+		<div class="aut_display_row">
+			<div class="aut_display_cell">
+				<b>{{ msg.categ_parent }} :</b>
+			</div>
+			<div class="aut_display_cell" id="parent_categ">
+				{% if element.context_parameters.in_selector %}
+					<a href="#" data-element-id="{{ element.parent.num_authority }}" data-element-type="authorities" onclick="set_parent('{{ global.caller }}', '{{ element.parent_id }}', '{{ element.parent_libelle | strip_tags | escape true }}','{{ global.callback }}')">
+						{{ element.parent_libelle }}
+					</a>
+				{% else %}
+					<a href="./autorites.php?categ=see&sub=category&id={{ element.parent_id }}">{{ element.parent_libelle  }}</a>
+				{% endif %}	
+			</div>
+		</div>
+	{% endif %}
+	
+	{% if element.has_child %}
+		<div class="aut_display_row">
+			<div class="aut_display_cell">
+				<b>{{msg.aut_categs_children}} :</b>
+			</div>
+			<div class="aut_display_cell" id="childs_categs">
+				{% for child in element.listchilds %}
+					{% if global.thesaurus_categories_categ_in_line %}
+						{% if !loop.first %}
+							{{ global.pmb_keyword_sep }}
+						{% endif %}
+						<span>
+						{% if element.context_parameters.in_selector %}
+							<a href="#" data-element-id="{{ child.num_authority }}" data-element-type="authorities" onclick="set_parent('{{ global.caller }}', '{{ child.id }}', '{{ child.libelle | strip_tags | escape true }}','{{ global.callback }}')">
+								{{ child.libelle }}
+							</a>
+						{% else %}
+							<a href="./autorites.php?categ=see&sub=category&id={{ child.id }}">{{ child.libelle }}</a>
+						{% endif %}	
+						</span>
+					{% else %}
+						{% if element.context_parameters.in_selector %}
+							<a href="#" data-element-id="{{ child.num_authority }}" data-element-type="authorities" onclick="set_parent('{{ global.caller }}', '{{ child.id }}', '{{ child.libelle | strip_tags | escape true }}','{{ global.callback }}')">
+								{{ child.libelle }}
+							</a>
+						{% else %}
+					 		<a href="./autorites.php?categ=see&sub=category&id={{ child.id }}">{{ child.libelle }}</a>
+					 	{% endif %}
+					 	<br/>
+				  	{% endif %}	
+				{% endfor %}
+			</div>
+		</div>
+	{% endif %}
+	{% if element.commentaire %}
+		<div class="aut_display_row">
+			<div class="aut_display_cell">
+				<b>{{msg.categ_na}} :</b>
+			</div>
+			<div class="aut_display_cell">
+				{{ element.commentaire | nl2br }}
+			</div>
+		</div>
+	{% endif %}
+{% endblock detail %}

@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<!--
+****************************************************************************************
+© 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: champs_base.xml,v 1.7.2.1.2.1 2025/01/28 15:13:20 rtigero Exp $ -->
+
+<indexation>
+
+	<!-- Table d'origine (référence)-->
+	<reference>collections</reference>
+	<!-- Clé primaire de la table de référence -->
+	<referencekey>collection_id</referencekey>
+
+	<field name="714" id="4001" pond="130" >
+		<table>
+			<tablefield>collection_name</tablefield>
+		</table>
+	</field>
+
+	<field name="165" id="4002" pond="130" >
+		<table>
+			<tablefield>collection_issn</tablefield>
+		</table>
+	</field>
+
+	<field name="searcher_publisher" external="yes" id="4003" datatype="publisher" keepEmptyWord="yes">
+		<table name='publishers'>
+			<tablefield name="editeur_nom" id="01" pond="100">ed_name</tablefield>
+			<tablefield name="editeur_adr1" id="02" pond="100">ed_adr1</tablefield>
+			<tablefield name="editeur_adr2" id="03" pond="100">ed_adr2</tablefield>
+			<tablefield name="editeur_cp" id="04" pond="100">ed_cp</tablefield>
+			<tablefield name="editeur_ville" id="05" pond="100">ed_ville</tablefield>
+			<tablefield name="146" id="06" pond="100">ed_pays</tablefield>
+			<tablefield name="editeur_web" id="07" pond="100">ed_web</tablefield>
+			<tablefield name="707" id="08" pond="100">ed_comment</tablefield>
+			<tablekey>ed_id</tablekey>
+			<idkey>ed_id</idkey>
+			<link type="1n">
+				<referencefield>collection_parent</referencefield>
+			</link>
+		</table>
+		<isbd name="isbd" class_name="editeur" id="09" pond="0"/>
+	</field>
+
+	<field name="147" id="4004" pond="100" >
+		<table>
+			<tablefield>collection_web</tablefield>
+		</table>
+	</field>
+
+	<field name="ed_comment" id="4005" pond="100" >
+		<table>
+			<tablefield>collection_comment</tablefield>
+		</table>
+	</field>
+
+	<!-- Concepts -->
+	<field name="index_concept_label" id="4006" datatype="concept">
+		<callable name="index_concept_label" id="01" class_path="./classes/index_concept.class.php" class_name="index_concept" method="get_concepts_labels_from_entity" parameters="5" pond="110"/>
+	</field>
+
+	<field name="index_concept_label_autopostage" id="4007" datatype="concept">
+		<callable name="index_generic_concept_label_autopostage" id="01" class_path="./classes/index_concept.class.php" class_name="index_concept" method="get_generic_concepts_labels_from_entity" parameters="5" pond="50"/>
+		<callable name="index_specific_concept_label_autopostage" id="02" class_path="./classes/index_concept.class.php" class_name="index_concept" method="get_specific_concepts_labels_from_entity" parameters="5" pond="50"/>
+	</field>
+
+	<!-- les CPs -->
+	<!-- de collections -->
+	<field name="authority_champs_perso" external="yes" id="4100" datatype="custom_field" >
+		<table>collection</table>
+	</field>
+
+	<!-- Autorités liées -->
+	<field name="aut_link_authors" external="yes" id="4901" datatype="aut_link">
+		<table name='authors' />
+		<isbd name="isbd" class_name="author" id="06" pond="0"/>
+	</field>
+	<field name="aut_link_categories" external="yes" id="4902" datatype="aut_link">
+		<table name='categories' />
+		<isbd name="isbd" class_name="categories" id="02" pond="0"/>
+	</field>
+	<field name="aut_link_publishers" external="yes" id="4903" datatype="aut_link">
+		<table name='publishers' />
+		<isbd name="isbd" class_name="editeur" id="09" pond="0"/>
+	</field>
+	<field name="aut_link_collections" external="yes" id="4904" datatype="aut_link">
+		<table name='collections' />
+		<isbd name="isbd" class_name="collection" id="02" pond="0"/>
+	</field>
+	<field name="aut_link_subcollections" external="yes" id="4905" datatype="aut_link">
+		<table name='sub_collections' />
+		<isbd name="isbd" class_name="subcollection" id="02" pond="0"/>
+	</field>
+	<field name="aut_link_series" external="yes" id="4906" datatype="aut_link">
+		<table name='series' />
+		<isbd name="isbd" class_name="serie" id="02" pond="0"/>
+	</field>
+	<field name="aut_link_titres_uniformes" external="yes" id="4907" datatype="aut_link">
+		<table name='titres_uniformes' />
+		<isbd name="isbd" class_name="titre_uniforme" id="08" pond="0"/>
+	</field>
+	<field name="aut_link_indexint" external="yes" id="4908" datatype="aut_link">
+		<table name='indexint' />
+		<isbd name="isbd" class_name="indexint" id="03" pond="0"/>
+	</field>
+	<field name="aut_link_authperso" external="yes" id="4500" datatype="authperso_link">
+		<table>authperso_authorities</table>
+	</field>
+
+	<!-- Common fields -->
+	<field name="297" external="yes" id="001" keepEmptyWord="yes">
+		<table name="authorities_statuts">
+			<filter>authorities.type_object=4</filter>
+			<tablefield name="authorities_statut_label" id="01" pond="100">authorities_statut_label</tablefield>
+			<tablekey>id_authorities_statut</tablekey>
+			<idkey>id_authorities_statut</idkey>
+			<link type="nn">
+				<table>authorities</table>
+				<referencefield>num_object</referencefield>
+				<externalfield>num_statut</externalfield>
+			</link>
+		</table>
+	</field>
+
+</indexation>

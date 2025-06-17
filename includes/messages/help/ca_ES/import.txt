@@ -1,0 +1,19 @@
+<br />
+<b>ATENCI&oacute;, aquesta importaci&oacute; crea els registres i les autoritats &eacute;s necessari. 
+<br />Aquesta funci&oacute; no actualitza registres ja existents.</b>
+<br /><br />
+
+L'arxiu ha de tenir el format UNIMARC<br />
+<ul>
+<li>L'importaci&oacute; es produeix en tres fases :
+<OL>
+<LI>C&agrave;rrega de l'arxiu</LI>
+<LI>Pre-c&agrave;rrega de l'arxiu</LI>
+<LI>Transfer&egrave;ncia a la base de dades de registres</LI>
+</OL></li>
+<br /><li>En comptes de carregar l'arxiu, pots posar-lo a disposici&oacute; del servidor 
+pel m&egrave;tode m&eacute;s convingui (FTP per exemple). En aquest cas el fitxer s'ha d'anomenar
+ "!!nom_fic!!" i podeu utilitzar directament la
+ <b>"!!nom_bouton!!"</b>.</li>
+</ul>
+<br />

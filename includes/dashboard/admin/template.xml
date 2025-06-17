@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- 
+****************************************************************************************
+© 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: template.xml,v 1.4 2021/02/12 15:29:40 dgoron Exp $ -->
+<template default_lang='fr_FR'>
+	<content lang='fr_FR'><![CDATA[
+		<h2>Gestion des tâches</h2>
+		<div class='row'>
+			<div class='title'>Arrêtées : </div>
+			<div class='value'>{{nb_taches_arretees.0.total}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>En échec : </div>
+			<div class='value'>{{nb_taches_en_echec.0.total}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>En attente : </div>
+			<div class='value'>{{nb_taches_en_attente.0.total}}</div>
+		</div>
+		{% if sphinx_status %}
+			<div class='row'>&nbsp;</div>
+			<h2>Sphinx</h2>
+			<div class='row'>
+				<div class='title'>{{ sphinx_status }}</div>
+			</div>
+		{% endif %}
+		]]>
+	</content>
+	
+		<content lang='en_UK'><![CDATA[
+		<h2>Task management</h2>
+		<div class='row'>
+			<div class='title'>Stopped : </div>
+			<div class='value'>{{nb_taches_arretees.0.total}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Failed : </div>
+			<div class='value'>{{nb_taches_en_echec.0.total}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Waiting : </div>
+			<div class='value'>{{nb_taches_en_attente.0.total}}</div>
+		</div>
+		{% if sphinx_status == false %}
+			<div class='row'>&nbsp;</div>
+			<h2>Sphinx</h2>
+			<div class='row'>
+				<div class='title'>Sphinx service is not activated</div>
+			</div>
+		{% endif %}
+		]]>
+	</content>
+</template>

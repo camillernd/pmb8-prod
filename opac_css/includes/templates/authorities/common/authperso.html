@@ -1,0 +1,21 @@
+{% extends 'gabarit.html' %}
+
+{% block title %}
+    {% if global.opac_rgaa_active %}
+        <h1>{{ authority.type_label }} {{ authority.info.isbd }}</h1>
+    {% endif %}
+{% endblock %}
+
+{% block aut_see %}
+	<div class="authpersolevel2">
+		{{ block.super }}
+	</div>
+{% endblock %}
+
+{% block details %}
+	{% if authority.info.view %}
+		{{ authority.info.view }}
+	{% else %}
+		{{ authority.info.name }} : {{ authority.info.isbd }}
+	{% endif%}
+{% endblock %} 

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- 
+****************************************************************************************
+© 2002-2004 PMB Services / www.sigb.net pmb@sigb.net et contributeurs (voir www.sigb.net)
+****************************************************************************************
+$Id: template.xml,v 1.5 2023/07/25 12:22:59 dgoron Exp $ -->
+<template default_lang='fr_FR'>
+	<content lang='fr_FR'><![CDATA[
+		<h2>Autorités</h2>
+		<div class='row'>
+			<div class='title'>Auteurs : </div>
+			<div class='value'>{{author.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Catégories : </div>
+			<div class='value'>{{categ.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Editeurs : </div>
+			<div class='value'>{{publishers.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Collections : </div>
+			<div class='value'>{{collections.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Sous-collections : </div>
+			<div class='value'>{{sub_collections.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Titres de série : </div>
+			<div class='value'>{{series.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Oeuvres/Expressions : </div>
+			<div class='value'>{{titres_uniformes.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Index. décimales : </div>
+			<div class='value'>{{indexint.nb}}</div>
+		</div>
+		<div class='row'></div>
+		
+		]]>
+	</content>
+	
+	<content lang='en_UK'><![CDATA[
+		<h2>Authorities</h2>
+		<div class='row'>
+			<div class='title'>Authors : </div>
+			<div class='value'>{{author.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Categories : </div>
+			<div class='value'>{{categ.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Publishers : </div>
+			<div class='value'>{{publishers.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Collections : </div>
+			<div class='value'>{{collections.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Subcollections : </div>
+			<div class='value'>{{sub_collections.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Series titles : </div>
+			<div class='value'>{{series.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Works/Expressions : </div>
+			<div class='value'>{{titres_uniformes.nb}}</div>
+		</div>
+		<div class='row'>
+			<div class='title'>Decimal indexings : </div>
+			<div class='value'>{{indexint.nb}}</div>
+		</div>
+		<div class='row'></div>
+		
+		]]>
+	</content>
+</template>

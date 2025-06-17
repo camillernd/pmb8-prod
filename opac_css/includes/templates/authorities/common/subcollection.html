@@ -1,0 +1,52 @@
+{% extends 'gabarit.html' %}
+
+<!-- $Id: subcollection.html,v 1.3 2023/08/04 12:16:28 dgoron Exp $ -->
+
+{% block title %}
+	{% title authority_isbd %}
+		{{ msg.subcollection_details_subcollection | printf authority.name }}
+	{% endtitle %}
+{% endblock %}
+
+{% block aut_see %}
+	<div class="subcollectionlevel2">
+		{{ block.super }}
+	</div>
+{% endblock %}
+	
+{% block details %}
+	<div class="aut_display_row">
+		<div class="aut_display_cell">
+			<b>{{ msg.subcollection_details_author | printf "" }}</b>
+		</div>
+		<div class="aut_display_cell">
+			<a href="./index.php?lvl=publisher_see&id={{ authority.publisher }}">{{ authority.publisher_libelle }}</a>
+		</div>
+	</div>
+	<div class="aut_display_row">
+		<div class="aut_display_cell">
+			<b>{{ msg.subcollection_details_collection | printf "" }}</b>
+		</div>
+		<div class="aut_display_cell">
+			<a href="./index.php?lvl=coll_see&id={{ authority.parent }}">{{ authority.parent_libelle }}</a>
+		</div>
+	</div>
+	<div class="aut_display_row">
+		<div class="aut_display_cell">
+			<b>{{ msg.subcollection_details_issn | printf "" }}</b>
+		</div>
+		<div class="aut_display_cell">
+			{% if authority.issn %}{{ authority.issn }}{% else %}{{ msg.subcollection_details_no_issn }}{% endif %}
+		</div>
+	</div>
+	{% if authority.comment %}
+		<div class="aut_display_row">
+			<div class="aut_display_cell">
+				<b>{{ msg.comment }} :</b>
+			</div>
+			<div class='aut_comment aut_display_cell'>
+				{{ authority.comment | nl2br }}
+			</div>
+		</div>
+	{% endif %}
+{% endblock %}

@@ -1,0 +1,16 @@
+# Ne jamais pousser ton docker-compose avec les credentials
+docker-compose.yml
+
+# Par sécurité, ignore aussi les volumes et dumps locaux
+mariadb_data/
+dump_pmb.sql
+*.sql
+*.sql.gz
+
+# Fichiers système potentiels
+.DS_Store
+Thumbs.db
+
+# Logs éventuels
+logs/
+*.log

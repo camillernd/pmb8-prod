@@ -1,0 +1,24 @@
+{% extends 'gabarit.html' %}
+
+<!-- $Id: indexint.html,v 1.5 2023/08/08 15:36:21 qvarin Exp $ -->
+
+{% block title %}
+	{% title authority_isbd %}
+		{{ msg.indexint_tpl_indexint }} {{ authority.name }}
+		{% if authority.comment %}
+			: {{ authority.comment }}
+		{% endif %}
+	{% endtitle %}
+{% endblock %}
+
+{% block aut_see %}
+	<div class="indexintlevel2">
+		{{block.super}}
+	</div>
+{% endblock %}
+	
+{% block details %}
+	{% if authority.has_child %}
+		{{ authority.child_list }}
+	{% endif %}
+{% endblock %}
